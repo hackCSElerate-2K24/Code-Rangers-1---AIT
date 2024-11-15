@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text on Image</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%; /* Adjust to fit your design */
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Adjust vertical position */
+            left: 65%; /* Adjust horizontal position */
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional background */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+        
+    <div class="image-container">
+        <img src="th.jpg" alt="" style="height: 500px; width: 900px; margin-left: 300px;">
+        <div class="text-overlay">YOU CAN'T FIX YOUR HEALTH <br>
+        UNTIL YOU FIX YOUR DIEt</div>
+    </div>
+</body>
+</html>
